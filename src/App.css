@@ -691,3 +691,18 @@ body{
     flex-direction: column;
   }
 }
+
+
+
+.greent{
+  color: #52B649;
+}
+.bluet{
+  color: #4380EC;
+}
+.redt{
+  color: #EC3C3C;
+}
+.yellowt{
+  color: #ECC53C;
+}

@@ -476,7 +476,7 @@ function App() {
                             ? 'yellowt'
                             : card.registered == 'abandoned'
                             ? 'redt'
-                            : 'greyt'
+                            : ''
                         }`}
                       >
                         <div
