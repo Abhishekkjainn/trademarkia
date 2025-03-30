@@ -233,9 +233,9 @@ function App() {
   }
 
   // Call API on component mount with 'nike'
-  // useEffect(() => {
-  //   fetchTrademarkData('nike');
-  // }, []);
+  useEffect(() => {
+    fetchTrademarkData('nike');
+  }, []);
 
   const handleStatusClick = (status) => {
     console.log(status);
