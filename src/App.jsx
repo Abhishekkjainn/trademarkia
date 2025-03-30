@@ -474,6 +474,12 @@ function App() {
                         ></div>
                         {card.registered == 'registered'
                           ? 'Registered'
+                          : card.registered == 'others'
+                          ? 'Others'
+                          : card.registered == 'pending'
+                          ? 'Pending'
+                          : card.registered == 'abandoned'
+                          ? 'Abandoned'
                           : 'Unknown Status'}
                       </div>
                       <div className="topstatus2">
