@@ -228,15 +228,19 @@ body{
 }
 .green{
   background-color: #52B649;
+  color: #52B649;
 }
 .blue{
   background-color: #4380EC;
+  color: #4380EC;
 }
 .red{
   background-color: #EC3C3C;
+  color: #EC3C3C;
 }
 .yellow{
   background-color: #ECC53C;
+  color: #ECC53C;
 }
 
 /* .ownerslawfirmsattorneysbar{
