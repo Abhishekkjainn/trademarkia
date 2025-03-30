@@ -469,7 +469,15 @@ function App() {
                       <div className="topstatus1">
                         <div
                           className={`circle ${
-                            card.registered === 'registered' ? 'green' : 'red'
+                            card.registered === 'registered'
+                              ? 'green'
+                              : card.registered == 'others'
+                              ? 'blue'
+                              : card.registered == 'pending'
+                              ? 'yellow'
+                              : card.registered == 'abandoned'
+                              ? 'red'
+                              : 'grey'
                           }`}
                         ></div>
                         {card.registered == 'registered'
