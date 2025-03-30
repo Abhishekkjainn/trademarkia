@@ -284,7 +284,10 @@ function App() {
 
   const filteredCardData = cardData.filter((card) => {
     // Status Filter
-    if (selectedStatus !== 'All' && card.registered !== selectedStatus) {
+    if (
+      selectedStatus !== 'All' &&
+      card.registered.toLowerCase() !== selectedStatus.toLowerCase()
+    ) {
       return false;
     }
 
