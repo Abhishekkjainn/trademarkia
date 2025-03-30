@@ -466,7 +466,19 @@ function App() {
                   </div>
                   <div className="statusreslistbottom">
                     <div className="topstatus">
-                      <div className="topstatus1">
+                      <div
+                        className={`topstatus1 ${
+                          card.registered === 'registered'
+                            ? 'greent'
+                            : card.registered == 'others'
+                            ? 'bluet'
+                            : card.registered == 'pending'
+                            ? 'yellowt'
+                            : card.registered == 'abandoned'
+                            ? 'redt'
+                            : 'greyt'
+                        }`}
+                      >
                         <div
                           className={`circle ${
                             card.registered === 'registered'
